@@ -31,12 +31,12 @@ function render(variables = {}) {
 
   let name = "";
   if (variables.name !== null) {
-    name += variables.name + " ";
+    name += variables.name + "Write your name";
   }
 
   let lastName = "";
   if (variables.lastName !== null) {
-    lastName += variables.lastName + " ";
+    lastName += variables.lastName + "Write your lastname";
   }
 
   let twitter = "";
@@ -57,6 +57,17 @@ function render(variables = {}) {
   let instagram = "";
   if (variables.instagram !== null) {
     instagram += variables.instagram + " ";
+  }
+
+  if (variables.city == null) {
+    variables.city = "Set a city";
+  }
+  if (variables.country == null) {
+    variables.country = "Set a country";
+  }
+
+  if (variables.role == null) {
+    variables.role = "Set a role";
   }
 
   // reset the website body with the new html output
