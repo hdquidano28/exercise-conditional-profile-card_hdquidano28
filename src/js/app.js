@@ -31,12 +31,12 @@ function render(variables = {}) {
 
   let name = "";
   if (variables.name !== null) {
-    name += variables.name + "Write your name";
+    name += variables.name + " ";
   }
 
   let lastName = "";
   if (variables.lastName !== null) {
-    lastName += variables.lastName + "Write your lastname";
+    lastName += variables.lastName + " ";
   }
 
   let twitter = "";
